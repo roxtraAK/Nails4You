@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "nails";
+  src: url(../fonts/PLAYWRITERO-VARIABLEFONT_WGHT.TTF);
+}
+
+.header {
+  background-color: white;
+  font-family: "nails";
+}
