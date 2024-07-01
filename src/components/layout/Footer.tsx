@@ -62,7 +62,7 @@ export function Footer() {
         <Stack className={`${style.hidden} ${style.hiddenlogo}`}>
           <Link
             sx={{ mb: "10px" }}
-            href="https://www.instagram.com/barbara_krinke_/"
+            href="https://www.facebook.com/barbara.krinke.75/"
           >
             <img
               style={{ height: "40px", width: "40px" }}

@@ -1,8 +1,23 @@
 import { Button, Stack } from "@mui/material";
 import styles from "@/styles/style.module.css";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const pages: string[] = ["Über Mich", "Zertifikate", "Kontakt"];
+  const router = useRouter();
+
+  const getRoute = (pages: string[]): Promise<boolean> | undefined => {
+    pages.map((page) => {
+      if (page === "Über Mich") {
+        return router.push("/about");
+      } else if (page === "Zertifikate") {
+        return router.push("/about");
+      } else if (page === "Kontakt") {
+        return router.push("/about");
+      }
+    });
+    return undefined;
+  };
 
   return (
     <Stack
@@ -30,6 +45,7 @@ export default function Header() {
         {pages.map((page) => (
           <Button
             key={page}
+            onClick={() => getRoute(pages)}
             sx={{
               mx: 1,
               whiteSpace: "nowrap",

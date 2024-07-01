@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import { Footer } from "@/components/layout/Footer";
 
-export default function Home() {
+export default function Index() {
   return (
     <Stack>
       <Header />
